@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobEligAI | Eligibility Verification</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="dashboard">
+  <header class="site-header">
+    <a class="brand" href="#dashboard" aria-label="JobEligAI dashboard">
+      <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+      <span class="brand-copy"><strong>JobElig<span>AI</span></strong><small>ELIGIBILITY VERIFICATION</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="nav-link active dashboard-link" href="#dashboard"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>Dashboard</span></a>
+      <a class="nav-link upload-link" href="#upload"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i><span>Upload Job</span></a>
+      <a class="nav-link profile-link" href="#profile"><i class="fa-solid fa-user-check" aria-hidden="true"></i><span>Verify Profile</span></a>
+      <a class="nav-link reports-link" href="#reports"><i class="fa-solid fa-folder-open" aria-hidden="true"></i><span>Saved Reports</span></a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="view dashboard-view" aria-labelledby="dashboard-title">
+      <div class="intro">
+        <h1 id="dashboard-title">Dashboard</h1>
+        <p>AI-powered job eligibility verification — upload recruitment documents, build candidate profiles, and verify eligibility clause-by-clause.</p>
+      </div>
+
+      <div class="stat-grid">
+        <article class="stat-card"><div class="stat-top"><span>Documents Processed</span><span class="stat-icon blue"><i class="fa-regular fa-file-lines" aria-hidden="true"></i></span></div><strong>0</strong></article>
+        <article class="stat-card"><div class="stat-top"><span>Candidates Verified</span><span class="stat-icon blue"><i class="fa-solid fa-users" aria-hidden="true"></i></span></div><strong>0</strong></article>
+        <article class="stat-card"><div class="stat-top"><span>Eligible Results</span><span class="stat-icon green"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></span></div><strong>0</strong></article>
+        <article class="stat-card"><div class="stat-top"><span>Flagged for Review</span><span class="stat-icon amber"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></span></div><strong>0</strong></article>
+      </div>
+
+      <div class="action-grid">
+        <article class="action-card"><div class="action-heading"><span class="action-icon"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i></span><div><h2>Upload Job Document</h2><p>Drag and drop recruitment PDFs for AI-driven rule extraction.</p></div></div><a class="primary-button" href="#upload">Go to Upload <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+        <article class="action-card"><div class="action-heading"><span class="action-icon"><i class="fa-solid fa-user-check" aria-hidden="true"></i></span><div><h2>Verify Candidate</h2><p>Build a candidate profile and run eligibility verification.</p></div></div><a class="primary-button" href="#profile">Start Verification <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+      </div>
+
+      <h2 class="section-title">Recent Verification Reports</h2>
+    </section>
+
+    <section id="upload" class="view upload-view" aria-labelledby="upload-title">
+      <div class="intro">
+        <h1 id="upload-title">Upload Job Document</h1>
+        <p>Upload recruitment PDFs or images. The AI will parse the document, detect sections, and extract structured eligibility rules for review.</p>
+      </div>
+      <div class="dropzone"><span class="cloud-icon"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i></span><strong>Drag and drop a recruitment PDF or image here</strong><p>or click to browse files — PDF, PNG, JPG supported</p></div>
+      <a class="sample-button" href="#upload"><i class="fa-regular fa-file-lines" aria-hidden="true"></i>Load Sample Document</a>
+      <div class="upload-preview"><i class="fa-solid fa-rotate" aria-hidden="true"></i></div>
+    </section>
+
+    <section id="profile" class="view profile-view" aria-labelledby="profile-title"><div class="intro"><h1 id="profile-title">Verify Candidate Profile</h1><p>Build a candidate profile and compare their qualifications against extracted job eligibility rules.</p></div><div class="empty-state"><span class="empty-icon"><i class="fa-solid fa-user-check" aria-hidden="true"></i></span><h2>Candidate verification workspace</h2><p>Start by uploading a job document, then add a candidate profile to run a clause-by-clause check.</p><a class="primary-button" href="#upload">Upload a Job <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div></section>
+    <section id="reports" class="view reports-view" aria-labelledby="reports-title"><div class="intro"><h1 id="reports-title">Saved Reports</h1><p>Review your latest eligibility verification results and flagged candidates.</p></div><div class="empty-state"><span class="empty-icon"><i class="fa-solid fa-folder-open" aria-hidden="true"></i></span><h2>Your saved reports will appear here</h2><p>Reports are created automatically after a candidate verification is complete.</p><a class="primary-button" href="#profile">Verify a Candidate <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div></section>
+  </main>
+</body>
+</html>
