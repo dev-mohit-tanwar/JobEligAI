@@ -4,7 +4,7 @@ A simple responsive eligibility verification dashboard built with HTML and CSS.
 
 ## Demo
 
-[Open the demo] (https://dev-mohit-tanwar.github.io/JobEligAI/)
+[Click here to view the page](https://dev-mohit-tanwar.github.io/JobEligAI/)
 
 ## Files
 
